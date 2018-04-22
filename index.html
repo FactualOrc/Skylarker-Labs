@@ -1,0 +1,2452 @@
+    <div class="sheet-wrapper">
+    <input type="radio" class="sheet-tab sheet-tab1" name="attr_core-tab" value="1" title="Char Info" checked="checked" /> 
+    <span class="sheet-tab sheet-tab1" style='line-height: 40px;'>Character</span> 
+    <input type="radio" class="sheet-tab sheet-tab2" name="attr_core-tab" value="2" title="Ship Info" /> 
+    <span class="sheet-tab sheet-tab2" style='line-height: 40px;'>Ship</span> 
+    <input type="radio" class="sheet-tab sheet-tab3" name="attr_core-tab" value="3" title="Vehic Info" /> 
+    <span class="sheet-tab sheet-tab3" style='line-height: 40px;'>Vehicle</span> 
+    <input type="radio" class="sheet-tab sheet-tab4" name="attr_core-tab" value="4" title="Crew" /> 
+    <span class="sheet-tab sheet-tab4" style='line-height: 40px;'>Crew</span> 
+    <input type="radio" class="sheet-tab sheet-tab5" name="attr_core-tab" value="5" title="Journal" /> 
+    <span class="sheet-tab sheet-tab5" style='line-height: 40px;'>Journal</span>
+    <hr />
+    <div class="sheet-section-char">
+      <div style="width: 100%; display: table;">
+        <div style="display: table-row">
+          <div style="width: 45%; display: table-cell;">
+            <h1>EDRPG</h1>
+            <h2>Elite: Dangerous - Role Playing Game</h2>
+          </div>
+          <div style="display: table-cell;">
+            <div style="display: table; width: fill-parent;">
+              <div style="display: table-row">
+                <div class="sheet-c-fillin">Name</div>
+              </div>
+              <div style="display: table-row">
+                <input type="text" name="char_name" style="background-color:rgb(122,255,255); width: 100%" />
+              </div>
+            </div>
+          </div>
+          <div style="width: 25%; display: table-cell;">
+            <div style="display: table; width: fill-parent;">
+              <div style="display: table-row">
+                <div class="sheet-c-fillin">Rank</div>
+              </div>
+              <div style="display: table-row">
+                <select style="background-color:rgb(122,255,255); width: 100%">
+                  <option value="r1">Harmless</option>
+                  <option value="r2">Mostly Harmless</option>
+                  <option value="r3">Novice</option>
+                  <option value="r4">Competent</option>
+                  <option value="r5">Expert</option>
+                  <option value="r6">Master</option>
+                  <option value="r7">Dangerous</option>
+                  <option value="r8">Deadly</option>
+                  <option value="r9">Elite</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace2"></div>
+      <div class="sheet-shift1">
+        <div class="sheet-row clearfix">
+          <div style="width: 55%; display: table; float: left;">
+            <div style="display: table-row">
+              <div style="width: 25%; display: table-cell;">Gender</div>
+              <div style="width: 25%; display: table-cell;">Age</div>
+              <div style="width: 25%; display: table-cell;">Height</div>
+              <div style="width: 25%; display: table-cell;">Weight</div>
+            </div>
+            <div style="display: table-row">
+              <div style="width: 25%; display: table-cell;">
+                <input type="text" name="char_gender" style="background-color:rgb(122,255,255); width: 100%" />
+              </div>
+              <div style="width: 25%; display: table-cell;">
+                <input type="text" name="char_age" style="background-color:rgb(122,255,255); width: 100%" />
+              </div>
+              <div style="width: 25%; display: table-cell;">
+                <input type="text" name="char_height" style="background-color:rgb(122,255,255); width: 100%" />
+              </div>
+              <div style="width: 25%; display: table-cell;">
+                <input type="text" name="char_mass" style="background-color:rgb(122,255,255); width: 100%" />
+              </div>
+            </div>
+          </div>
+          <div style="display: table; float: left;">
+            <div style="display: table-row;">
+              <div class="sheet-shift2">
+                <div style="width: 50%; display: table-cell;" class="sheet-c-fillin2">Rank Points:</div>
+                <div style="width: 50%; display: table-cell;">
+                  <input type="number" value="0" name="char_ponts" style="background-color:rgb(122,255,255);width: 100%" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace2"></div>
+      <div class="sheet-shift2">
+        <div class="clearfix sheet-row">
+          <div style="width: 35%; display: table; float: left; padding-right: 90px">
+            <div style="display: table-row">
+              <div style="width: 33%; display: table-cell" class="sheet-center"></div>
+              <div style="width: 33%; display: table-cell" class="sheet-center">Initiative</div>
+              <div style="width: 33%; display: table-cell" class="sheet-center"></div>
+            </div>
+            <div style="display: table-row">
+              <div style="display: table-cell;" class="sheet-center"></div>
+              <div style="display: table-cell;" class="sheet-center sheet-c-fillin">Tactics</div>
+              <div style="display: table-cell;" class="sheet-center"></div>
+            </div>
+            <div style="display: table-row">
+              <div style="width: 33%; display: table-cell;" class="sheet-center"></div>
+              <div style="width: 33%; display: table-cell;" class="sheet-center">
+                <input type="number" name="char_initiative" value="0" style="background-color:rgb(122,255,255); width: 100%" />
+              </div>
+              <div style="width: 33%; display: table-cell;" class="sheet-center"></div>
+            </div>
+            <div style="display: table-row">
+              <div style="width: 33%; display: table-cell;" class="sheet-center">Defence</div>
+              <div style="width: 33%; display: table-cell;" class="sheet-center"></div>
+              <div style="width: 33%; display: table-cell;" class="sheet-center">Defence</div>
+            </div>
+            <div style="display: table-row">
+              <div style="display: table-cell;" class="center sheet-c-fillin">Dodge</div>
+              <div style="display: table-cell;" class="sheet-center"></div>
+              <div style="display: table-cell;" class="center sheet-c-fillin">Parry</div>
+            </div>
+            <div style="display: table-row">
+              <div style="width: 33%; display: table-cell;background-color:rgb(122,255,255);" class="sheet-center">
+                <input type="number" name="char_dodge" value="0" style="background-color:rgb(122,255,255); width: 100%" />
+              </div>
+              <div style="width: 33%; display: table-cell;" class="sheet-center"></div>
+              <div style="width: 33%; display: table-cell;background-color:rgb(122,255,255);" class="sheet-center">
+                <input type="number" name="char_parry" value="0" style="background-color:rgb(122,255,255); width: 100%" />
+              </div>
+            </div>
+          </div>
+          <div style="width: 50%; display: table; float: left">
+            <div style="display: table-row">
+              <div style="width: 50%; display: table-cell">Karma</div>
+              <div style="width: 50%; display: table-cell;">Endurance</div>
+            </div>
+            <div style="display: table-row">
+              <div style="width: 50%; display: table-cell;">
+                <textarea name="char_karma" style="background-color:mediumpurple;"></textarea>
+              </div>
+              <div style="width: 50%; display: table-cell;">
+                <textarea name="char_endurance" style="background-color:orange;"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace2"></div>
+      <div style="display: table; width: 100%; border-collapse: collapse">
+        <div style="display: table-row">
+          <div style="display: table-cell" class="sheet-c-fillin">Backgrounds</div>
+        </div>
+        <div style="display: table-row" class="sheet-t-border">
+          <div style="display: table-cell; width: 20%">
+            <textarea name="char_back1" style="width: 100%"></textarea>
+          </div>
+          <div style="display: table-cell; width: 20%">
+            <textarea name="char_back2" style="width: 100%"></textarea>
+          </div>
+          <div style="display: table-cell; width: 20%">
+            <textarea name="char_back3" style="width: 100%"></textarea>
+          </div>
+          <div style="display: table-cell; width: 20%">
+            <textarea name="char_back4" style="width: 100%"></textarea>
+          </div>
+          <div style="display: table-cell; width: 20%">
+            <textarea name="char_back5" style="width: 100%"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace1"></div>
+      <div style="display: table; width: 100%; border-collapse: collapse">
+        <div style="display: table-row">
+          <div style="display: table-cell; width: 33%">
+            <div style="display: table; width: 90%" class="sheet-t-border-h2">
+              <div style="table: sheet-row;" class="sheet-c-fillin">Personal Combat</div>
+              <div style="display: table-row" class="sheet-t-border-h1">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Skill</div>
+                <div style="display: table-cell; padding-left: 4px; padding-right: 4px;" class="sheet-c-small">Score</div>
+                <div style="display: table-cell; padding-left: 4px; padding-right: 4px;" class="sheet-c-small">Bonus</div>
+                <div style="display: table-cell; padding-left: 4px; padding-right: 4px;" class="sheet-c-small"></div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell;width: 150%" class="sheet-c-small">Dodge</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_dodge_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_dodge_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_dodge_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell;width: 150%" class="sheet-c-small">Energy Weapons</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_energy_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_energy_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_energy_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell;width: 150%" class="sheet-c-small">Fighting</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_fighing_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_fighting_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_fighting_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell;width: 150%" class="sheet-c-small">Grenades</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_grenades_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_grenades_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_grenades_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell;width: 150%" class="sheet-c-small">Heavy Weapons</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_heavy_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_heavy_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_heavy_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell;width: 150%" class="sheet-c-small">Kinetic Weapons</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_kinetic_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_kinetic_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_kinetic_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell;width: 150%" class="sheet-c-small">Melee Weapons</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_melee_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_melee_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_melee_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell;width: 150%" class="sheet-c-small">Parry</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_parry_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_parry_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_parry_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="display: table-cell; width: 33%">
+            <div style="display: table; width: 90%" class="sheet-t-border-h2">
+              <div style="table: sheet-row" class="sheet-c-fillin">Intelligence</div>
+              <div style="display: table-row" class="sheet-t-border-h1">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Skill</div>
+                <div style="display: table-cell; padding-left: 4px; padding-right: 4px;" class="sheet-c-small">Score</div>
+                <div style="display: table-cell; padding-left: 4px; padding-right: 4px;" class="sheet-c-small">Bonus</div>
+                <div style="display: table-cell; padding-left: 4px; padding-right: 4px;" class="sheet-c-small"></div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Computer</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_computer_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_computer_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_computer_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Culture &amp; Law</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_culture_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_culture_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_culture_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Cyber</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_cyber_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_cyber_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_cyber_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Medicine</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_medicine_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_medicine_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_medicine_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Planetary Knowledge</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_planetary_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_planetary_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_planetary_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Science</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_science_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_science_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_science_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Tactics</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_tactics_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_tactics_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_tactics_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Trading</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_trading_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_trading_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_trading_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="display: table-cell; width: 33%">
+            <div style="display: table; width: 90%" class="sheet-t-border-h2">
+              <div style="table: sheet-row" class="sheet-c-fillin">Social Skills</div>
+              <div style="display: table-row" class="sheet-t-border-h1">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Skill</div>
+                <div style="display: table-cell; padding-left: 4px; padding-right: 4px;" class="sheet-c-small">Score</div>
+                <div style="display: table-cell; padding-left: 4px; padding-right: 4px;" class="sheet-c-small">Bonus</div>
+                <div style="display: table-cell; padding-left: 4px; padding-right: 4px;" class="sheet-c-small"></div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Bargain</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_bargain_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_bargain_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_bargain_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Bluff</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_bluff_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_bluff_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_bluff_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Charm</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_charm_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_charm_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_charm_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Diplomacy</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_diplomacy_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_diplomacy_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_diplomacy_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Gambling</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_gambling_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_gambling_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_gambling_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Insight</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_insight_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_insight_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_insight_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Intimidate</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_intimidate_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_intimidate_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_intimidate_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Streetwise</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_streetwise_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_streetwise_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_streetwise_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div style="display table:row">
+          <div class="sheet-whitespace2"></div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell; width: 33%">
+            <div style="display: table; width: 90%" class="sheet-t-border-h2">
+              <div style="table: sheet-row" class="sheet-c-fillin">Vehicle Skills</div>
+              <div style="display: table-row" class="sheet-t-border-h1">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Skill</div>
+                <div style="display: table-cell; padding-left: 4px; padding-right: 4px;" class="sheet-c-small">Score</div>
+                <div style="display: table-cell; padding-left: 4px; padding-right: 4px;" class="sheet-c-small">Bonus</div>
+                <div style="display: table-cell; padding-left: 4px; padding-right: 4px;" class="sheet-c-small"></div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Navigation</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_navigation_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_navigation_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_navigation_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Repair</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_repair_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_repair_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_repair_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Spaceship Piloting</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_spaceship_piloting_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_spaceship_piloting_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_spaceship_piloting_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Spaceship Weapons</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_spaceship_weapons_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_spaceship_weapons_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_spaceship_weapons_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Systems</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_systems_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_systems_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_systems_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Vehicle Piloting</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_vehicle_piloting_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_vehicle_piloting_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_vehicle_piloting_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Vehicle Weapons</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_vehicle_weapons_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_vehicle_weapons_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_vehicle_weapons_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="display: table-cell">
+            <div style="display: table; width: 90%" class="sheet-t-border-h2">
+              <div style="table: sheet-row" class="sheet-c-fillin">Espionage</div>
+              <div style="display: table-row" class="sheet-t-border-h1">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Skill</div>
+                <div style="display: table-cell; padding-left: 4px; padding-right: 4px;" class="sheet-c-small">Score</div>
+                <div style="display: table-cell; padding-left: 4px; padding-right: 4px;" class="sheet-c-small">Bonus</div>
+                <div style="display: table-cell; padding-left: 4px; padding-right: 4px;" class="sheet-c-small"></div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Athletics</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_athletics_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_athletics_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_athletics_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Perception</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_perception_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_perception_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_perception_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Security</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_security_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_security_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_security_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Sleight of Hand</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_sleight_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_sleight_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_sleight_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Stealth</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_stealth_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_stealth_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_stealth_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+              <div style="display: table-row">
+                <div style="display: table-cell; width: 150%" class="sheet-c-small">Survival</div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_survival_s" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="number" name="char_survival_b" class="sheet-c-big" style="width: 100%" />
+                </div>
+                <div style="display: table-cell">
+                  <input type="checkbox" value="1" name="char_survival_m" class="sheet-c-big middle" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="display: table-cell">
+            <div style="display: table; width: 90%" class="sheet-t-border-h2">
+              <div style="display: table-row">
+                <div class="sheet-c-fillin">Enhancements</div>
+              </div>
+              <div style="display: table-row" class="sheet-t-border-h1 sheet-c-small">Description/Effects</div>
+              <div style="display: table-row">
+                <textarea name="char_enhance" class="sheet-c-big" style="width: 100%"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace1"></div>
+      <div style="display: table; width: 100%; border-collapse: collapse">
+        <div class="sheet-c-fillin">Ranged Weapons</div>
+        <div style="display: table-row" class="sheet-t-border-h1">
+          <div style="display: table-cell" class="sheet-c-big">Weapon</div>
+          <div style="display: table-cell" class="sheet-c-small">To Hit</div>
+          <div style="display: table-cell" class="sheet-c-big">Short</div>
+          <div style="display: table-cell" class="sheet-c-big">Medium</div>
+          <div style="display: table-cell" class="sheet-c-big">Long</div>
+          <div style="display: table-cell" class="sheet-c-small">Damage</div>
+          <div style="display: table-cell" class="sheet-c-small">Ammo</div>
+          <div style="display: table-cell; width: 25%" class="sheet-c-big">Notes</div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell">
+            <input name="char_weap01" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap01th" type="number" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap01sr" type="number" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap01mr" type="number" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap01lr" type="number" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap01dmg" type="number" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap01ammo" type="number" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 25%">
+            <input name="char_weap01n" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell">
+            <input name="char_weap02" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap02th" type="number" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap02sr" type="number" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap02mr" type="number" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap02lr" type="number" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap02dmg" type="number" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap02ammo" type="number" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 25%">
+            <input name="char_weap02n" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell">
+            <input name="char_weap03" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap03th" type="number" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap03sr" type="number" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap03mr" type="number" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap03lr" type="number" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap03dmg" type="number" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap03ammo" type="number" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 25%">
+            <input name="char_weap03n" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell">
+            <input name="char_weap04" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap04th" type="number" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap04sr" type="number" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap04mr" type="number" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap04lr" type="number" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap04dmg" type="number" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap04ammo" type="number" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 25%">
+            <input name="char_weap04n" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell">
+            <input name="char_weap05" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap05th" type="number" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap05sr" type="number" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap05mr" type="number" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap05lr" type="number" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap05dmg" type="number" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input name="char_weap05ammo" type="number" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 25%">
+            <input name="char_weap05n" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace2"></div>
+      <div style="display: table; width: 75%; border-collapse: collapse">
+        <div class="sheet-c-fillin">Close Combat</div>
+        <div style="display: table-row" class="sheet-t-border-h1">
+          <div style="display: table-cell" class="sheet-c-big">Weapon</div>
+          <div style="display: table-cell" class="sheet-c-small">To Hit</div>
+          <div style="display: table-cell" class="sheet-c-big">Finese</div>
+          <div style="display: table-cell" class="sheet-c-small">Damage</div>
+          <div style="display: table-cell; width: 25%" class="sheet-c-big">Notes</div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell">
+            <input type="text" name="char_sword01" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_sword01th" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_sword01fn" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_sword01dmg" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 25%">
+            <input type="text" name="char_sword01n" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell">
+            <input type="text" name="char_sword02" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_sword02th" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_sword02fn" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_sword02dmg" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 25%">
+            <input type="text" name="char_sword02n" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell">
+            <input type="text" name="char_sword03" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_sword03th" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_sword03fn" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_sword03dmg" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 25%">
+            <input type="text" name="char_sword03n" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace2"></div>
+      <hr />
+      <div class="sheet-whitespace2"></div>
+      <div style="display: table; width: 100%; border-collapse: collapse" class="sheet-t-border-h2">
+        <div class="sheet-c-fillin">Karma Capabilities</div>
+        <div style="display: table-row" class="sheet-t-border-h1">
+          <div style="display: table-cell" class="sheet-c-small">Capability</div>
+          <div style="display: table-cell" class="sheet-c-small">Cost</div>
+          <div style="display: table-cell" class="sheet-c-small">Type</div>
+          <div style="display: table-cell; width: 60%" class="sheet-c-small">Description</div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl01" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_karma_abl01c" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl01t" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 60%">
+            <input type="text" name="char_karma_abl01n" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display:table-row">
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl02" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_karma_abl02c" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl02t" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 60%">
+            <input type="text" name="char_karma_abl02n" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl03" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_karma_abl03c" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl03t" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 60%">
+            <input type="text" name="char_karma_abl03n" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl04" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_karma_abl04c" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl04t" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 60%">
+            <input type="text" name="char_karma_abl04n" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl04" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_karma_abl04c" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl014" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 60%">
+            <input type="text" name="char_karma_abl04n" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl05" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_karma_abl05c" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl05t" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 60%">
+            <input type="text" name="char_karma_abl05n" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl06" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_karma_abl06c" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl06t" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 60%">
+            <input type="text" name="char_karma_abl06n" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl07" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_karma_abl07c" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl07t" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 60%">
+            <input type="text" name="char_karma_abl07n" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl08" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_karma_abl08c" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl08t" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 60%">
+            <input type="text" name="char_karma_abl08n" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl09" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_karma_abl09c" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl09t" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 60%">
+            <input type="text" name="char_karma_abl09n" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl10" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_karma_abl10c" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="text" name="char_karma_abl10t" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 60%">
+            <input type="text" name="char_karma_abl10n" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace1"></div>
+      <div class="clearfix sheet-row">
+        <div style="display: table; width: 50%; border-collapse: collapse; float: left; margin-right: 5%">
+          <div class="sheet-c-fillin">Carried Weapons</div>
+          <div style="display: table-row">
+            <div style="display: table-cell" class="sheet-c-small">Primary Weapon</div>
+            <div style="display: table-cell; width: 60%">
+              <input name="char_c_weap01" type="text" style="width: 100%" class="sheet-c-big" />
+            </div>
+          </div>
+          <div style="display: table-row">
+            <div style="display: table-cell" class="sheet-c-small">Secondary Weapon</div>
+            <div style="display: table-cell; width: 60%">
+              <input name="char_c_weap02" type="text" style="width: 100%" placeholder="One Handed Only" class="sheet-c-big" />
+            </div>
+          </div>
+          <div style="display: table-row">
+            <div style="display: table-cell" class="sheet-c-small">Clip/Grenade</div>
+            <div style="display: table-cell; width: 60%">
+              <input name="char_c_misc01" type="text" style="width: 100%" class="sheet-c-big" />
+            </div>
+          </div>
+          <div style="display: table-row">
+            <div style="display: table-cell" class="sheet-c-small">Clip/Grenade</div>
+            <div style="display: table-cell; width: 60%">
+              <input name="char_c_misc02" type="text" style="width: 100%" class="sheet-c-big" />
+            </div>
+          </div>
+          <div style="display: table-row">
+            <div style="display: table-cell" class="sheet-c-small">Clip/Grenade</div>
+            <div style="display: table-cell; width: 60%">
+              <input name="char_c_misc03" type="text" style="width: 100%" placeholder="Military Fatigues Only"
+              class="sheet-c-small" />
+            </div>
+          </div>
+          <div style="display: table-row">
+            <div style="display: table-cell" class="sheet-c-small">Clip/Grenade</div>
+            <div style="display: table-cell; width: 60%">
+              <input name="char_c_misc04" type="text" style="width: 100%" placeholder="Military Fatigues Only"
+              class="sheet-c-small" />
+            </div>
+          </div>
+          <div style="display: table-row">
+            <div style="display: table-cell" class="sheet-c-small">Grenade</div>
+            <div style="display: table-cell; width: 60%">
+              <input name="char_c_misc05" type="text" style="width: 100%" placeholder="Military Fatigues Only"
+              class="sheet-c-small" />
+            </div>
+          </div>
+        </div>
+        <div style="display: table; border-collapse: collapse; float: left; width: 45%;">
+          <div class="sheet-c-fillin">Clothing</div>
+          <div style="display: table-row">
+            <div style="display: table-cell" class="sheet-c-small">Item</div>
+            <div style="display: table-cell" class="sheet-c-small">Notes</div>
+            <div style="display: table-cell" class="sheet-c-small">Worn</div>
+          </div>
+          <div style="display: table-row">
+            <div style="display: table-cell">
+              <input name="char_cloth01" type="text" style="width: 100%" class="sheet-c-small" />
+            </div>
+            <div style="display: table-cell">
+              <input name="char_cloth01n" type="text" style="width: 100%" class="sheet-c-big" />
+            </div>
+            <div style="display: table-cell">
+              <input name="char_cloth01w" value="1" type="checkbox" class="sheet-middle sheet-c-big" />
+            </div>
+          </div>
+          <div style="display: table-row">
+            <div style="display: table-cell">
+              <input name="char_cloth02" type="text" style="width: 100%" class="sheet-c-small" />
+            </div>
+            <div style="display: table-cell">
+              <input name="char_cloth02n" type="text" style="width: 100%" class="sheet-c-big" />
+            </div>
+            <div style="display: table-cell">
+              <input name="char_cloth02w" value="1" type="checkbox" class="sheet-middle sheet-c-big" />
+            </div>
+          </div>
+          <div style="display: table-row">
+            <div style="display: table-cell">
+              <input name="char_cloth03" type="text" style="width: 100%" class="sheet-c-small" />
+            </div>
+            <div style="display: table-cell">
+              <input name="char_cloth03n" type="text" style="width: 100%" class="sheet-c-big" />
+            </div>
+            <div style="display: table-cell">
+              <input name="char_cloth03w" value="1" type="checkbox" class="sheet-middle sheet-c-big" />
+            </div>
+          </div>
+          <div style="display: table-row">
+            <div style="display: table-cell">
+              <input name="char_cloth04" type="text" style="width: 100%" class="sheet-c-small" />
+            </div>
+            <div style="display: table-cell">
+              <input name="char_cloth04n" type="text" style="width: 100%" class="sheet-c-big" />
+            </div>
+            <div style="display: table-cell">
+              <input name="char_cloth04w" value="1" type="checkbox" class="sheet-middle sheet-c-big" />
+            </div>
+          </div>
+          <div style="display: table-row">
+            <div style="display: table-cell">
+              <input name="char_cloth05" type="text" style="width: 100%" class="sheet-c-small" />
+            </div>
+            <div style="display: table-cell">
+              <input name="char_cloth05n" type="text" style="width: 100%" class="sheet-c-big" />
+            </div>
+            <div style="display: table-cell">
+              <input name="char_cloth05w" value="1" type="checkbox" class="sheet-middle sheet-c-big" />
+            </div>
+          </div>
+          <div style="display: table-row">
+            <div style="display: table-cell">
+              <input name="char_cloth06" type="text" style="width: 100%" class="sheet-c-small" />
+            </div>
+            <div style="display: table-cell">
+              <input name="char_cloth06n" type="text" style="width: 100%" class="sheet-c-big" />
+            </div>
+            <div style="display: table-cell">
+              <input name="char_cloth06w" value="1" type="checkbox" class="sheet-middle sheet-c-big" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace1"></div>
+      <div style="display: table; border-collapse: collapse; width: 100%;">
+        <div class="sheet-c-fillin">Cash</div>
+        <div style="display: table-row">
+          <div style="display: table-cell; width: 33%" class="sheet-c-small">Credits (Cr)</div>
+          <div style="display: table-cell; width: 33%" class="sheet-c-small">Micro Credits (uCr)</div>
+          <div style="display: table-cell" class="sheet-c-small">Units (U)</div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell">
+            <input type="number" name="char_cr" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_ucr" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="number" name="char_u" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace2"></div>
+      <div style="display: table; border-collapse: collapse; width: 100%;">
+        <div class="sheet-c-fillin">Equipment Stored in Pack</div>
+        <div style="display: table-row" class="sheet-t-border-h3">
+          <div style="display: table-cell; width: 50%">
+            <input type="text" name="char_pack01" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="text" name="char_pack02" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell; width: 50%">
+            <input type="text" name="char_pack03" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="text" name="char_pack04" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell; width: 50%">
+            <input type="text" name="char_pack05" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="text" name="char_pack06" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell; width: 50%">
+            <input type="text" name="char_pack07" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input type="text" name="char_pack08" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace2"></div>
+      <div style="display: table; border-collapse: collapse; width: 100%;">
+        <div class="sheet-c-fillin">Equipment Stored in Ship</div>
+        <div style="display: table-row" class="sheet-t-border-h3">
+          <div style="display: table-cell; width: 50%">
+            <input name="ship_pack01" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="ship_pack02" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell; width: 50%">
+            <input name="ship_pack03" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="ship_pack04" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell; width: 50%">
+            <input name="ship_pack05" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="ship_pack06" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell; width: 50%">
+            <input name="ship_pack07" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="ship_pack08" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell; width: 50%">
+            <input name="ship_pack09" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="ship_pack10" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row">
+          <div style="display: table-cell; width: 50%">
+            <input name="ship_pack11" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell">
+            <input name="ship_pack12" type="text" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sheet-section-ship">
+      <div style="width: 100%; display: table;">
+        <div style="display: table-row">
+          <div style="width: 45%; display: table-cell;">
+            <h1>EDRPG</h1>
+            <h2>Elite: Dangerous - Role Playing Game</h2>
+          </div>
+          <div style="display: table-cell;">
+            <div style="display: table; width: fill-parent;">
+              <div style="display: table-row">
+                <div class="sheet-c-fillin">Pilot Name</div>
+              </div>
+              <div style="display: table-row">
+                <input type="text" name="ship_pilot" style="background-color:rgb(122,255,255); width: 100%" />
+              </div>
+            </div>
+          </div>
+          <div style="width: 25%; display: table-cell;">
+            <div style="display: table; width: fill-parent;">
+              <div style="display: table-row">
+                <div class="sheet-c-fillin">Ship Model</div>
+              </div>
+              <div style="display: table-row">
+                <input type="text" name="ship_model" style="background-color:rgb(122,255,255); width: 100%" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace2"></div>
+      <div class="sheet-shift1">
+        <div style="width: 55%; display: table">
+          <div style="display: table-row">
+            <div style="width: 25%; display: table-cell;">Agility</div>
+            <div style="width: 25%; display: table-cell;">Speed</div>
+            <div style="width: 25%; display: table-cell;">Range</div>
+            <div style="width: 25%; display: table-cell;">Fuel</div>
+          </div>
+          <div style="display: table-row">
+            <div style="width: 25%; display: table-cell;">
+              <input type="text" name="ship_agility" style="background-color:rgb(122,255,255); width: 100%" />
+            </div>
+            <div style="width: 25%; display: table-cell;">
+              <input type="text" name="ship_speed" style="background-color:rgb(122,255,255); width: 100%" />
+            </div>
+            <div style="width: 25%; display: table-cell;">
+              <input type="text" name="ship_range" style="background-color:rgb(122,255,255); width: 100%" />
+            </div>
+            <div style="width: 25%; display: table-cell;">
+              <input type="text" name="ship_fuel" style="background-color:rgb(122,255,255); width: 100%" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace2"></div>
+      <div class="sheet-shift2">
+        <div class="clearfix sheet-row">
+          <div style="width: 35%; display: table; float: left; padding-right: 90px">
+            <div style="display: table-row">
+              <div style="width: 33%; display: table-cell" class="sheet-center"></div>
+              <div style="width: 33%; display: table-cell;font-size: 8px;font-weight: normal;" class="sheet-center">Tactical +
+              Sensor Bonus</div>
+              <div style="width: 33%; display: table-cell" class="sheet-center"></div>
+            </div>
+            <div style="display: table-row">
+              <div style="display: table-cell;" class="sheet-center"></div>
+              <div style="display: table-cell;" class="sheet-center sheet-c-fillin">Initiative</div>
+              <div style="display: table-cell;" class="sheet-center"></div>
+            </div>
+            <div style="display: table-row">
+              <div style="width: 33%; display: table-cell;" class="sheet-center"></div>
+              <div style="width: 33%; display: table-cell;" class="sheet-center">
+                <input type="number" name="ship_initiative" value="0" style="background-color:rgb(122,255,255); width: 100%" />
+              </div>
+              <div style="width: 33%; display: table-cell;" class="sheet-center"></div>
+            </div>
+            <div style="display: table-row">
+              <div style="width: 33%; display: table-cell;font-size: 8px;font-weight: normal;" class="sheet-center">Agility +
+              Spaceship Piloting</div>
+              <div style="width: 33%; display: table-cell;font-size: 8px;font-weight: normal;" class="sheet-center">Defence +
+              Dogfighting + Sensor Bonus</div>
+              <div style="width: 33%; display: table-cell;font-size: 8px;font-weight: normal;" class="sheet-center">Speed + 1/2
+              Spaceship Piloting</div>
+            </div>
+            <div style="display: table-row">
+              <div style="display: table-cell;" class="sheet-center sheet-c-fillin">Defence</div>
+              <div style="display: table-cell;" class="sheet-center sheet-c-fillin">Dogfight</div>
+              <div style="display: table-cell;" class="sheet-center sheet-c-fillin">Pursuit</div>
+            </div>
+            <div style="display: table-row">
+              <div style="width: 33%; display: table-cell;background-color:rgb(122,255,255);" class="sheet-center">
+                <input type="number" name="char_defence" value="0" style="background-color:rgb(122,255,255); width: 100%" />
+              </div>
+              <div style="width: 33%; display: table-cell;" class="sheet-center">
+                <input type="number" name="char_dogfight" value="0" style="background-color:rgb(122,255,255); width: 100%" />
+              </div>
+              <div style="width: 33%; display: table-cell;background-color:rgb(122,255,255);" class="sheet-center">
+                <input type="number" name="char_pursuit" value="0" style="background-color:rgb(122,255,255); width: 100%" />
+              </div>
+            </div>
+          </div>
+          <div style="width: 50%; display: table; float: left">
+            <div style="display: table-row">
+              <div style="width: 50%; display: table-cell; background-color:orange;">Hull</div>
+              <div style="width: 50%; display: table-cell; background-color:lightblue;">Shields</div>
+            </div>
+            <div style="display: table-row">
+              <div style="width: 50%; display: table-cell;">
+                <textarea name="ship_hull" style="background-color:orange;"></textarea>
+              </div>
+              <div style="width: 50%; display: table-cell;">
+                <textarea name="ship_shields" style="background-color:lightblue;"></textarea>
+              </div>
+            </div>
+            <div style="display: table-row">
+              <div style="width: 50%; display: table-cell;" class="sheet-c-fillin2">Shield Recharge</div>
+              <div style="width: 50%;display: table-cell">
+                <input name="ship_shields_re" type="number" style="background-color:lightblue;width: 100%; display: table-cell" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace2"></div>
+      <div style="display: table; width: 100%; border-collapse: collapse">
+        <div style="display: table-row">
+          <div style="display: table-cell;" class="sheet-c-fillin">Weapons</div>
+        </div>
+        <div style="display: table-row; width: 100%" class="sheet-t-border-h1">
+          <div style="display: table-cell;" class="sheet-c-big">Name</div>
+          <div style="display: table-cell; width: 8%" class="sheet-c-big">Size</div>
+          <div style="display: table-cell; width: 8%" class="sheet-c-big">Strength</div>
+          <div style="display: table-cell; width: 8%" class="sheet-c-big">Power</div>
+          <div style="display: table-cell; width: 8%" class="sheet-c-big">To Hit</div>
+          <div style="display: table-cell; width: 8%" class="sheet-c-big">Damage</div>
+          <div style="display: table-cell; width: 8%" class="sheet-c-big">Ammo</div>
+          <div style="display: table-cell;" class="sheet-c-big">Special</div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap01" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap01_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap01_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap01_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap01_tohit" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap01_damage" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap01_ammo" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap01_special" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap02" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap02_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap02_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap02_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap02_tohit" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap02_damage" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap02_ammo" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap02_special" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap03" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap03_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap03_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap03_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap03_tohit" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap03_damage" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap03_ammo" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap03_special" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap04" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap04_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap04_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap04_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap04_tohit" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap04_damage" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap04_ammo" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap04_special" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap05" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap05_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap05_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap05_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap05_tohit" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap05_damage" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap05_ammo" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap05_special" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap06" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap06_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap06_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap06_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap06_tohit" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap06_damage" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_weap06_ammo" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap06_special" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace1"></div>
+      <div style="display: table; width: 100%; border-collapse: collapse">
+        <div style="display: table-row">
+          <div style="display: table-cell" class="sheet-c-fillin">Utility Mounts</div>
+        </div>
+        <div style="display: table-row; width: 100%" class="sheet-t-border-h1">
+          <div style="display: table-cell;" class="sheet-c-big">Name</div>
+          <div style="display: table-cell; width: 8%" class="sheet-c-big">Size</div>
+          <div style="display: table-cell; width: 8%" class="sheet-c-big">Strength</div>
+          <div style="display: table-cell; width: 8%" class="sheet-c-big">Power</div>
+          <div style="display: table-cell;" class="sheet-c-big">Model</div>
+          <div style="display: table-cell;" class="sheet-c-big">Description</div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_utility01" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_utility01_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_utility01_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_utility01_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_utility01_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_utility01_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_utility02" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_utility02_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_utility02_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_utility02_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_utility02_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_utility02_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_utility03" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_utility03_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_utility03_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_utility03_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_utility03_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_utility03_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_utility04" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_utility04_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_utility04_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_utility04_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_utility04_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_utility04_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_utility05" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_utility05_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_utility05_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_utility05_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_utility05_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_utility05_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_utility06" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_utility06_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_utility06_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_utility06_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_utility06_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_utility06_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace1"></div>
+      <div style="display: table; width: 100%; border-collapse: collapse">
+        <div style="display: table-row">
+          <div style="display: table-cell" class="sheet-c-fillin">Fixed Components</div>
+        </div>
+        <div style="display: table-row; width: 100%" class="sheet-t-border-h1">
+          <div style="display: table-cell;" class="sheet-c-big">Name</div>
+          <div style="display: table-cell; width: 8%" class="sheet-c-big">Size</div>
+          <div style="display: table-cell; width: 8%" class="sheet-c-big">Strength</div>
+          <div style="display: table-cell; width: 8%" class="sheet-c-big">Power</div>
+          <div style="display: table-cell;" class="sheet-c-big">Model</div>
+          <div style="display: table-cell;" class="sheet-c-big">Description</div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;" class="sheet-c-big">Bulkhead</div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed01_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed01_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed01_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_fixed01_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_fixed01_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;" class="sheet-c-big">Power Plant</div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed02_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed02_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed02_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_fixed02_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_fixed02_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;" class="sheet-c-big">Thrusters</div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed03_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed03_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed03_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_fixed03_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_fixed03_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;" class="sheet-c-big">Frame Shift Drive</div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed04_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed04_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed04_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_fixed04_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_fixed04_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;" class="sheet-c-big">Life Support</div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed05_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed05_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed05_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_fixed05_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_fixed05_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;" class="sheet-c-big">Power Distributor</div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed06_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed06_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed06_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_fixed06_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_fixed06_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;" class="sheet-c-big">Sensors</div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed07_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed07_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed07_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_fixed07_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_fixed07_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;width 20%" class="sheet-c-big">Cargo Hatch</div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed08_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed08_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_fixed08_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_fixed08_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_fixed08_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace1"></div>
+      <div style="display: table; width: 100%;border-collapse: collapse;">
+        <div style="display: table-row">
+          <div style="display: table-cell" class="sheet-c-fillin">Internal Components</div>
+        </div>
+        <div style="display: table-row; width: 100%" class="sheet-t-border-h1">
+          <div style="display: table-cell;" class="sheet-c-big">Name</div>
+          <div style="display: table-cell; width: 8%" class="sheet-c-big">Size</div>
+          <div style="display: table-cell; width: 8%" class="sheet-c-big">Strength</div>
+          <div style="display: table-cell; width: 8%" class="sheet-c-big">Power</div>
+          <div style="display: table-cell;" class="sheet-c-big">Model</div>
+          <div style="display: table-cell;" class="sheet-c-big">Description</div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_internal01" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal01_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal01_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal01_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_internal01_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="text" name="ship_internal01_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_internal02" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal02_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal02_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal02_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_internal02_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_internal02_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_internal03" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal03_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal03_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal03_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_internal03_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_internal03_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_internal04" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal04_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal04_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal04_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_internal04_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_internal04_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_internal05" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal05_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal05_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal05_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_internal05_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_internal05_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_internal06" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal06_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal06_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal06_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_internal06_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_internal06_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_internal07" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal07_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal07_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal07_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_internal07_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_internal07_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_internal08" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal08_size" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal08_strength" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell; width: 8%">
+            <input type="number" name="ship_internal08_power" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_internal08_model" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_internal08_descript" style="width: 100%" class="sheet-c-small" />
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace3"></div>
+      <div style="display: table; width: 50%" class="sheet-middle">
+        <div style="display: table-row; width: 100%">
+          <div style="width: 50%; display: table-cell;" class="sheet-c-fillin2">Total Power:</div>
+          <div style="width: 50%; display: table-cell;">
+            <input type="number" value="0" name="ship_power" style="background-color:rgb(122,255,255);width: 100%" />
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace1"></div>
+    </div>
+    <div class="sheet-section-vehic">
+      <div style="width: 100%; display: table;">
+        <div style="display: table-row">
+          <div style="width: 45%; display: table-cell;">
+            <h1>EDRPG</h1>
+            <h2>Elite: Dangerous - Role Playing Game</h2>
+          </div>
+          <div style="display: table-cell;">
+            <div style="display: table; width: fill-parent;">
+              <div style="display: table-row">
+                <div class="sheet-c-fillin">Pilot Name</div>
+              </div>
+              <div style="display: table-row">
+                <input type="text" name="vehicle_pilot" style="background-color:rgb(122,255,255); width: 100%" />
+              </div>
+            </div>
+          </div>
+          <div style="width: 25%; display: table-cell;">
+            <div style="display: table; width: fill-parent;">
+              <div style="display: table-row">
+                <div class="sheet-c-fillin">Ship Model</div>
+              </div>
+              <div style="display: table-row">
+                <input type="text" name="vehicle_model" style="background-color:rgb(122,255,255); width: 100%" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace2"></div>
+      <div class="sheet-shift1">
+        <div style="width: 55%; display: table">
+          <div style="display: table-row">
+            <div style="width: 25%; display: table-cell;">Agility</div>
+            <div style="width: 25%; display: table-cell;">Max Speed</div>
+            <div style="width: 25%; display: table-cell;">Accelerate</div>
+            <div style="width: 25%; display: table-cell;">Decelerate</div>
+          </div>
+          <div style="display: table-row">
+            <div style="width: 25%; display: table-cell;">
+              <input type="text" name="vehicle_agility" style="background-color:rgb(122,255,255); width: 100%" />
+            </div>
+            <div style="width: 25%; display: table-cell;">
+              <input type="text" name="vehicle_speed" style="background-color:rgb(122,255,255); width: 100%" />
+            </div>
+            <div style="width: 25%; display: table-cell;">
+              <input type="text" name="vehicle_range" style="background-color:rgb(122,255,255); width: 100%" />
+            </div>
+            <div style="width: 25%; display: table-cell;">
+              <input type="text" name="vehicle_fuel" style="background-color:rgb(122,255,255); width: 100%" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace2"></div>
+      <div class="sheet-shift2">
+        <div class="clearfix sheet-row">
+          <div style="width: 35%; display: table; float: left; padding-right: 90px">
+            <div style="display: table-row">
+              <div style="display: table-cell;font-size: 8px;font-weight: normal;" class="sheet-center">Agility + Spaceship
+              Piloting</div>
+              <div style="display: table-cell;" class="sheet-center sheet-c-fillin">Initiative</div>
+              <div style="display: table-cell;font-size: 8px;font-weight: normal;" class="sheet-center">Speed + 1/2 Spaceship
+              Piloting</div>
+            </div>
+            <div style="display: table-row">
+              <div style="width: 33%; display: table-cell;" class="sheet-center sheet-c-fillin">Defence</div>
+              <div style="width: 33%; display: table-cell;" class="sheet-center">
+                <input type="number" name="vehicle_Initiative" value="0" style="background-color:rgb(122,255,255); width: 100%" />
+              </div>
+              <div style="width: 33%; display: table-cell;" class="sheet-center sheet-c-fillin">Pursuit</div>
+            </div>
+            <div style="display: table-row">
+              <div style="width: 33%; display: table-cell;" class="sheet-center">
+                <input type="number" name="vehicle_defence" value="0" style="background-color:rgb(122,255,255); width: 100%" />
+              </div>
+              <div style="width: 33%; display: table-cell;" class="sheet-center"></div>
+              <div style="width: 33%; display: table-cell;" class="sheet-center">
+                <input type="number" name="vehicle_pursuit" value="0" style="background-color:rgb(122,255,255); width: 100%" />
+              </div>
+            </div>
+          </div>
+          <div style="width: 50%; display: table; float: left">
+            <div style="display: table-row">
+              <div style="width: 50%; display: table-cell; background-color:orange;">Hull</div>
+              <div style="width: 50%; display: table-cell; background-color:lightblue;">Shields</div>
+            </div>
+            <div style="display: table-row">
+              <div style="width: 50%; display: table-cell;">
+                <textarea name="ship_hull" style="background-color:orange;"></textarea>
+              </div>
+              <div style="width: 50%; display: table-cell;">
+                <textarea name="ship_shields" style="background-color:lightblue;"></textarea>
+              </div>
+            </div>
+            <div style="display: table-row">
+              <div style="width: 50%; display: table-cell;" class="sheet-c-fillin2">Shield Recharge</div>
+              <div style="width: 50%;display: table-cell">
+                <input name="ship_shields_re" type="number" style="background-color:lightblue;width: 100%; display: table-cell" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace2"></div>
+      <div style="display: table; width: 100%; border-collapse: collapse;">
+        <div style="display: table-row">
+          <div style="display: table-cell" class="sheet-c-fillin">Weapons</div>
+        </div>
+        <div style="display: table-row; width: 100%" class="sheet-t-border-h1">
+          <div style="display: table-cell;" class="sheet-c-big">Name</div>
+          <div style="display: table-cell;" class="sheet-c-big">To Hit</div>
+          <div style="display: table-cell;" class="sheet-c-big">Damage</div>
+          <div style="display: table-cell;" class="sheet-c-big">Ammo</div>
+          <div style="display: table-cell;" class="sheet-c-big">Special</div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap01" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_weap01_tohit" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_weap01_damage" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_weap01_ammo" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap01_special" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap02" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_weap02_tohit" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_weap02_damage" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_weap02_ammo" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap02_special" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap03" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_weap03_tohit" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_weap03_damage" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_weap03_ammo" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap03_special" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap04" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_weap04_tohit" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_weap04_damage" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_weap04_ammo" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap04_special" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap05" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_weap05_tohit" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_weap05_damage" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_weap05_ammo" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap05_special" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap06" style="width: 100%" class="sheet-c-big" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_weap06_tohit" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_weap06_damage" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="number" name="ship_weap06_ammo" style="width: 100%" class="sheet-c-small" />
+          </div>
+          <div style="display: table-cell;">
+            <input type="text" name="ship_weap06_special" style="width: 100%" class="sheet-c-big" />
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace1"></div>
+      <div style="display: table; width: 100%">
+        <div style="display: table-row">
+          <div style="display: table-cell" class="sheet-c-fillin">Speed Table</div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell; width: 20%" class="sheet-c-big">Speed</div>
+          <div style="display: table-cell" class="sheet-c-small">1</div>
+          <div style="display: table-cell" class="sheet-c-small">2</div>
+          <div style="display: table-cell" class="sheet-c-small">3</div>
+          <div style="display: table-cell" class="sheet-c-small">4</div>
+          <div style="display: table-cell" class="sheet-c-small">5</div>
+          <div style="display: table-cell" class="sheet-c-small">6</div>
+          <div style="display: table-cell" class="sheet-c-small">7</div>
+          <div style="display: table-cell" class="sheet-c-small">8</div>
+          <div style="display: table-cell" class="sheet-c-small">9</div>
+          <div style="display: table-cell" class="sheet-c-small">10</div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell; width: 20%" class="sheet-c-big">Defence Bonus</div>
+          <div style="display: table-cell">
+            <input style="width:100%;" class="sheet-c-big" name="vehicle_speed_bonus01" type="number" />
+          </div>
+          <div style="display: table-cell">
+            <input style="width:100%;" class="sheet-c-big" name="vehicle_speed_bonus02" type="number" />
+          </div>
+          <div style="display: table-cell">
+            <input style="width:100%;" class="sheet-c-big" name="vehicle_speed_bonus03" type="number" />
+          </div>
+          <div style="display: table-cell">
+            <input style="width:100%;" class="sheet-c-big" name="vehicle_speed_bonus04" type="number" />
+          </div>
+          <div style="display: table-cell">
+            <input style="width:100%;" class="sheet-c-big" name="vehicle_speed_bonus05" type="number" />
+          </div>
+          <div style="display: table-cell">
+            <input style="width:100%;" class="sheet-c-big" name="vehicle_speed_bonus06" type="number" />
+          </div>
+          <div style="display: table-cell">
+            <input style="width:100%;" class="sheet-c-big" name="vehicle_speed_bonus07" type="number" />
+          </div>
+          <div style="display: table-cell">
+            <input style="width:100%;" class="sheet-c-big" name="vehicle_speed_bonus08" type="number" />
+          </div>
+          <div style="display: table-cell">
+            <input style="width:100%;" class="sheet-c-big" name="vehicle_speed_bonus09" type="number" />
+          </div>
+          <div style="display: table-cell">
+            <input style="width:100%;" class="sheet-c-big" name="vehicle_speed_bonus10" type="number" />
+          </div>
+        </div>
+        <div style="display: table-row; width: 100%">
+          <div style="display: table-cell; width: 20%" class="sheet-c-big">Attack Penalty</div>
+          <div style="display: table-cell">
+            <input style="width:100%;" class="sheet-c-big" name="vehicle_speed_penalty01" type="number" />
+          </div>
+          <div style="display: table-cell">
+            <input style="width:100%;" class="sheet-c-big" name="vehicle_speed_penalty02" type="number" />
+          </div>
+          <div style="display: table-cell">
+            <input style="width:100%;" class="sheet-c-big" name="vehicle_speed_penalty03" type="number" />
+          </div>
+          <div style="display: table-cell">
+            <input style="width:100%;" class="sheet-c-big" name="vehicle_speed_penalty04" type="number" />
+          </div>
+          <div style="display: table-cell">
+            <input style="width:100%;" class="sheet-c-big" name="vehicle_speed_penalty05" type="number" />
+          </div>
+          <div style="display: table-cell">
+            <input style="width:100%;" class="sheet-c-big" name="vehicle_speed_penalty06" type="number" />
+          </div>
+          <div style="display: table-cell">
+            <input style="width:100%;" class="sheet-c-big" name="vehicle_speed_penalty07" type="number" />
+          </div>
+          <div style="display: table-cell">
+            <input style="width:100%;" class="sheet-c-big" name="vehicle_speed_penalty08" type="number" />
+          </div>
+          <div style="display: table-cell">
+            <input style="width:100%;" class="sheet-c-big" name="vehicle_speed_penalty09" type="number" />
+          </div>
+          <div style="display: table-cell">
+            <input style="width:100%;" class="sheet-c-big" name="vehicle_speed_penalty10" type="number" />
+          </div>
+        </div>
+      </div>
+      <div class="sheet-whitespace1"></div>
+    </div>
+    <div class="sheet-section-crew">
+      <fieldset class="repeating_crewmember">
+        <div style="display: table; width: 100%">
+          <div style="display: table-row; width: 100%">
+            <div style="display: table-cell; width: 50%">
+              <input type="text" style="width: 100%" name="crew_name" class="sheet-c-big" />
+            </div>
+            <div style="display: table-cell; width: 50%; padding-left: 10px" class="sheet-c-small">Name</div>
+          </div>
+          <div style="display: table-row; width: 100%">
+            <div style="display: table-cell; width: 50%; background-color: orange; text-align: right; padding-right: 10px">
+            Endurance</div>
+            <div style="display: table-cell; width: 50%">
+              <input type="text" style="width: 100%" name="crew_endurance" class="sheet-c-big" />
+            </div>
+          </div>
+        </div>
+        <div style="display: table; width: 100%">
+          <div style="display: table-row; width: 100%">
+            <div style="display: table-cell; width: 15%" class="sheet-c-big">Spaceship Weapons</div>
+            <div style="display: table-cell; width: 10%">
+              <input type="text" style="width: 100%" name="crew_skill_ship_wepaons" class="sheet-c-small" />
+            </div>
+            <div style="display: table-cell; width: 15%" class="sheet-c-big">Spaceship Piloting</div>
+            <div style="display: table-cell; width: 10%">
+              <input type="text" style="width: 100%" name="crew_skill_shpiloting" class="sheet-c-small" />
+            </div>
+            <div style="display: table-cell; width: 15%" class="sheet-c-big">Systems</div>
+            <div style="display: table-cell; width: 10%">
+              <input type="text" style="width: 100%" name="crew_skill_systems" class="sheet-c-small" />
+            </div>
+            <div style="display: table-cell; width: 15%" class="sheet-c-big">Repair</div>
+            <div style="display: table-cell; width: 10%">
+              <input type="text" style="width: 100%" name="crew_skill_repair" class="sheet-c-small" />
+            </div>
+          </div>
+          <div style="display: table-row; width: 100%">
+            <div style="display: table-cell; width: 15%" class="sheet-c-big">Combat Skill</div>
+            <div style="display: table-cell; width: 10%">
+              <input type="text" style="width: 100%" name="crew_skill_combat" class="sheet-c-small" />
+            </div>
+            <div style="display: table-cell; width: 15%" class="sheet-c-big">Morality</div>
+            <div style="display: table-cell; width: 10%">
+              <input type="text" style="width: 100%" name="crew_morality" class="sheet-c-small" />
+            </div>
+            <div style="display: table-cell; width: 15%" class="sheet-c-big">Allegiance</div>
+            <div style="display: table-cell; width: 10%">
+              <input type="text" style="width: 100%" name="crew_allegience" class="sheet-c-small" />
+            </div>
+            <div style="display: table-cell; width: 15%" class="sheet-c-big">Salary</div>
+            <div style="display: table-cell; width: 10%">
+              <input type="text" style="width: 100%" name="crew_salary" class="sheet-c-small" />
+            </div>
+          </div>
+        </div>
+        <div class="sheet-whitespace1"></div>
+      </fieldset>
+    </div>
+    <div class="sheet-section-journal">
+      <fieldset class="repeating_journalnotessection">
+        <div style="display: table; width: 100%">
+          <div style="display: table-row; width: 100%">
+            <div style="display: table-cell">
+              <input name="attr_journalnotetopic" placeholder="Title" type="text"
+              style="width: 100%; background-color: lightgray;" />
+            </div>
+          </div>
+          <div style="display: table-row; width: 100%">
+            <div style="display: table-cell">
+              <textarea name="attr_journalnotes" style="width: 100%; background-color: lightgray;"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="sheet-whitespace1"></div>
+      </fieldset>
+    </div>
+    <div class="sheet-whitespace2"></div>
+    <hr />
+    </div>
