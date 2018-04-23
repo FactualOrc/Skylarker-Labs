@@ -31,4 +31,4 @@ Private Beta Release 1 - First Release
 Acknowledgements:  
 @MissInformed#8284 of the CodeSupport Discord Group  
 https://www.w3schools.com/ for their tutorials  
-Tacroy00 for contributing the first EDRPG Character Sheet  
+Tacroy00 for contributing the first roll20.net EDRPG Character Sheet  
